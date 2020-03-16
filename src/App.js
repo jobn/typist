@@ -1,9 +1,10 @@
 import React from "react";
 import lessons from "./lessons";
 import Lesson from "./Lesson";
+import useLocalStorage from "./useLocalStorage";
 
 function App() {
-  const [currentLevel, setCurrentLevel] = React.useState(0);
+  const [currentLevel, setCurrentLevel] = useLocalStorage("level", 0);
 
   return (
     <div className="flex-1 flex flex-col">
