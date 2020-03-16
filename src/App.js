@@ -10,7 +10,7 @@ function App() {
       <label>
         Lektion:
         <select
-          onChange={e => setCurrentLevel(e.target.value)}
+          onChange={e => setCurrentLevel(parseInt(e.target.value))}
           value={currentLevel}
         >
           {lessons.map(lesson => (
