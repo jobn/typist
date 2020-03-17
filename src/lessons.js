@@ -147,7 +147,7 @@ const lessons = [
   {
     level: 29,
     label: "3.10",
-    keys: "Dette er så afslutningen på de indledende øvelser"
+    keys: "dette er så afslutningen på de indledende øvelser"
   }
 ];
 
