@@ -14,7 +14,7 @@ function Welcome() {
 
   return (
     <>
-      <div className="absolute top-0 left-0 bg-white border rounded shadow-lg p-20 ">
+      <div className="absolute top-0 left-0 w-full bg-white border rounded shadow-lg p-20 ">
         <h1 className="text-2xl">Velkommen til 10-finger træning.</h1>
 
         <p className="py-8">
@@ -29,14 +29,27 @@ function Welcome() {
           <br />
           Træn det samme niveau indtil du kan det. Skift så til næste niveau i
           hjørnet.
+          <br />
+          <br />
+          God fornøjelse
         </p>
 
         <button
           onClick={() => setDismissed(true)}
-          className="border rounded text-lg py-1 px-4"
+          className="border rounded text-lg py-1 px-4 bg-green-400"
         >
           Start
         </button>
+
+        <p className="text-right text-sm -m-6">
+          10-finger træning er gratis og open-source. Kildekoden kan findes på{" "}
+          <a
+            href="https://github.com/jobn/typist"
+            className="text-blue-600 underline"
+          >
+            Github
+          </a>
+        </p>
       </div>
 
       <div style={{ height: "48px" }} />
