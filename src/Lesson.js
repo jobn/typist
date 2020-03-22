@@ -40,6 +40,7 @@ function Lesson({ keys }) {
 
   React.useEffect(() => {
     const handleKeypress = e => {
+      e.preventDefault();
       dispatch({ type: "keypress", payload: e.key });
     };
 
